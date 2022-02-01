@@ -1,6 +1,13 @@
 # forgette.js (preview)
 Forgette about state management.
   
+Why?
++ NOT a proxy
++ track only parts of object
++ it is safe for `const { property } = store`
++ `get` is safe from `set`: `const [store, get, set] = ....`
+  
+## Basics
 1. Creating a store
 ```js
 const nested_object = { favorite: { color: "red" } }
